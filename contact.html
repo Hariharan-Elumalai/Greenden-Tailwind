@@ -14,7 +14,7 @@
             class="bg-green-100 p-3 flex item-center justify-between shadow-xl sticky top-0">
             <h1 class="text-2xl">GREENDEN</h1>
 
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+            <svg id="menu" xmlns="http://www.w3.org/2000/svg" fill="none"
                 viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
                 class="size-6 md:hidden">
                 <path stroke-linecap="round" stroke-linejoin="round"
@@ -33,6 +33,25 @@
                 </li>
             </ul>
         </nav>
+
+        <!-- side navbar -->
+         <div id="sidenav" class="bg-green-100 fixed z-20 top-0 right-0.5%" style="width: 50%; height: 100vh; right: -50%;">
+            
+            <div class="text-right p-5">
+                <p id="closenav" class="cursor-pointer inline">X</p>
+            </div>
+            <ul class="flex flex-col items-center gap-8 md:flex">
+                <li class="hover:underline">
+                    <a href="./index.html">Home</a>
+                </li>
+                <li class="hover:underline">
+                    <a href="./product.html">Product</a>
+                </li>
+                <li class="hover:underline">
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+         </div>
 
         <!-- contact -->
         <section class="bg-white">
@@ -116,5 +135,9 @@
                 below for those interest</p>
             <p>&copy; 2021 Greenday.com</p>
         </section>
+
+        <script src="contact.js"></script>
     </body>
 </html>
+
+
